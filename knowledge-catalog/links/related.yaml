@@ -48,3 +48,75 @@
     kind: glossary-term
     glossary: liqid-business
     id: account
+
+- kind: entry-link
+  id: upvest-user-contracting-party
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: upvest-user
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party
+
+- kind: entry-link
+  id: upvest-user-banking-partner
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: upvest-user
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+
+- kind: entry-link
+  id: account-subtype-contracting-party
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account-subtype
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party
+
+- kind: entry-link
+  id: account-subtype-account
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account-subtype
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account
+
+- kind: entry-link
+  id: qplix-legal-entity-qplix-virtual-entity
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-legal-entity
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-virtual-entity
+
+- kind: entry-link
+  id: qplix-legal-entity-account
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-legal-entity
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account

@@ -1,0 +1,28 @@
+kind: glossary-term
+id: qplix-legal-entity
+parent: account-structure
+display_name: Qplix Legal Entity
+description: Vendor name for the root legal entity in Qplix. Same concept as contracting party; different vocabulary.
+labels:
+  domain: wealth
+  grain: party
+  vocabulary: vendor
+overview: |
+  The root Legal Entity in Qplix is the contracting party. Grain is one
+  root LE. Its id lands on Next Gen account.qplix_id and on Salesforce
+  Financial Account.
+
+  Analytics: landing_qplix.legal_entities. There is no stg_qplix_account.
+
+  Do not treat this as the Virtual Entity (that is the portfolio node).
+  Do not treat qplix_group_id as the contracting party — the group lives
+  with banking-partner / transfer keys.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - contracting-party
+related_terms:
+  - account
+  - qplix-virtual-entity

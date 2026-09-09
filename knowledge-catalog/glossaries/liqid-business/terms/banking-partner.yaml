@@ -1,6 +1,6 @@
 kind: glossary-term
 id: banking-partner
-parent: structure
+parent: account-structure
 display_name: Banking Partner
 description: One contracting party's account with one institution LIQID uses to hold money and securities. Type plus external_id must be read together.
 labels:
@@ -17,8 +17,8 @@ overview: |
   - transfer / custodian node in Qplix
 
   Notes:
-  - Upvest User maps to contracting party and, when type is upvest, its id is
-    also banking_partner.external_id. Same vendor object, two roles.
+  - Upvest User.id is banking_partner.external_id when type is upvest.
+    See upvest-user.
   - Older tickets may still say banking entity.
 contacts:
   - role: steward
@@ -30,3 +30,4 @@ related_terms:
   - contracting-party
   - portfolio
   - account
+  - upvest-user

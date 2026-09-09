@@ -1,6 +1,6 @@
 kind: glossary-term
 id: contracting-party
-parent: structure
+parent: account-structure
 display_name: Contracting Party
 description: The legal party that holds the contract. Exists whether or not that party has ever invested, which is why it is not called an investor.
 labels:
@@ -8,13 +8,13 @@ labels:
   grain: party
 overview: |
   Root entity in Polarix. Banking partners, portfolios, and external reference
-  accounts hang off it.
+  accounts hang off it. Shape (single, joint, child, business) is
+  account-subtype, a flag not a child node.
 
   Maps to:
-  - Account in Next Gen
-  - Account in Salesforce
-  - Legal Entity (root) in Qplix
-  - User in Upvest
+  - Account in Next Gen and Salesforce. See account.
+  - Legal Entity (root) in Qplix. See qplix-legal-entity.
+  - User in Upvest. See upvest-user. Same vendor object, two roles.
 
   Notes:
   - Where Polarix translates Qplix wire data, a column may still read investor.
@@ -29,6 +29,9 @@ contacts:
     email: data-care@liqid.de
 synonyms:
   - account
+  - qplix-legal-entity
 related_terms:
   - banking-partner
   - portfolio
+  - upvest-user
+  - account-subtype

@@ -1,6 +1,6 @@
 kind: glossary-term
 id: account
-parent: structure
+parent: account-structure
 display_name: Account
 description: Vendor name for contracting party in Next Gen and Salesforce. Same concept; different vocabulary.
 labels:
@@ -16,6 +16,9 @@ overview: |
 
   Salesforce Account and Next Gen account sit at the same level but are
   not guaranteed 1:1. Bridge: account.external_salesforce_id.
+
+  Shape is account-subtype. Next Gen uses subtype tables; Salesforce
+  Account.Type is not the same picklist.
 contacts:
   - role: steward
     name: Data Care
@@ -24,3 +27,5 @@ synonyms:
   - contracting-party
 related_terms:
   - banking-partner
+  - account-subtype
+  - qplix-legal-entity

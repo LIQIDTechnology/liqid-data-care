@@ -29,7 +29,7 @@ This repo is **data input only**. A later Terraform module will walk these files
 
 ## Conventions
 
-- Use **local IDs** everywhere (`parent: structure`, not `projects/.../glossaries/...`).
+- Use **local IDs** everywhere (`parent: account-structure`, not `projects/.../glossaries/...`).
 - Shared keys: `kind`, `id`, `display_name`, `description`, `labels`.
 - Term/category extras (`overview`, `contacts`) become Knowledge Catalog aspects at apply time.
 - Definition links (term → BigQuery table or column) live in `links/definitions.yaml`.

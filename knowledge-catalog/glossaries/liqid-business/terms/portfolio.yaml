@@ -1,6 +1,6 @@
 kind: glossary-term
 id: portfolio
-parent: structure
+parent: account-structure
 display_name: Portfolio
 description: An investable product instance. Hangs on a banking partner, not directly on the contracting party.
 labels:
@@ -13,16 +13,19 @@ overview: |
   Maps to:
   - portfolio + type tables in Next Gen and Polarix
   - Portfolio__c in Salesforce
-  - Virtual Entity (portfolio node) in Qplix
+  - Virtual Entity (portfolio node) in Qplix. See qplix-virtual-entity.
 
   Notes:
   - dim_portfolios (Salesforce key) and dim_next_gen_portfolios (Next Gen key)
     are the same level, different keys — not one entity.
-  - Qplix Legal Entity is the contracting party; the Virtual Entity is the portfolio.
+  - Qplix Legal Entity is the contracting party; the Virtual Entity is the
+    portfolio. See qplix-legal-entity and qplix-virtual-entity.
 contacts:
   - role: steward
     name: Data Care
     email: data-care@liqid.de
+synonyms:
+  - qplix-virtual-entity
 related_terms:
   - contracting-party
   - banking-partner

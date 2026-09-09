@@ -1,6 +1,6 @@
 kind: glossary-term
 id: sleeve
-parent: structure
+parent: account-structure
 display_name: Sleeve
 description: A portfolio component of exactly one investment account and one cash account, classified by sleeve type.
 labels:

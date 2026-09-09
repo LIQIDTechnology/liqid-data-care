@@ -9,6 +9,9 @@ overview: |
   Same grain across tools. A portfolio hangs on a banking partner (Next Gen:
   portfolio.custodian_id → custodian.account_id), not directly on the contracting party.
 
+  Account subtype (single | joint | child | business) is a flag on the
+  contracting party, not a child node.
+
       contracting_party   (subtype: single | joint | child | business)
         └── banking_partner
               └── portfolio

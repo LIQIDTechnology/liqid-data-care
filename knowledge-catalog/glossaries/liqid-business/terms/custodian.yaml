@@ -1,6 +1,6 @@
 kind: glossary-term
 id: custodian
-parent: structure
+parent: account-structure
 display_name: Custodian
 description: Vendor and wire name for banking partner. Same concept; different vocabulary.
 labels:

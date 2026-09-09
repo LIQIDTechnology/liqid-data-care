@@ -1,0 +1,28 @@
+kind: glossary-term
+id: qplix-virtual-entity
+parent: account-structure
+display_name: Qplix Virtual Entity
+description: Vendor name for the portfolio node in Qplix. Same concept as portfolio; different vocabulary.
+labels:
+  domain: wealth
+  grain: product-instance
+  vocabulary: vendor
+overview: |
+  The Virtual Entity is the Qplix portfolio node. Grain is one portfolio.
+  Key is qplix_portfolio_id (also Next Gen portfolio.qplix_id). There is
+  no stg_qplix_portfolio.
+
+  Qplix's own tree is Legal Entity → Virtual Entity → custodian/transfer
+  node. The banking partner hangs under the portfolio in the structure
+  eval, unlike the LIQID tree (contracting party → banking partner →
+  portfolio).
+
+  Do not treat this as the root Legal Entity (that is the contracting party).
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - portfolio
+related_terms:
+  - qplix-legal-entity

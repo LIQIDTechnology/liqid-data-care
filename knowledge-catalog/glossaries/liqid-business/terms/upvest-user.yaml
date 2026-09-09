@@ -1,0 +1,24 @@
+kind: glossary-term
+id: upvest-user
+parent: account-structure
+display_name: Upvest User
+description: Upvest object that Polarix maps to contracting party, and whose id is reused as the Upvest banking-partner key. Same vendor object, two roles.
+labels:
+  domain: wealth
+  grain: party
+  vocabulary: vendor
+overview: |
+  Polarix maps User to contracting party. When banking_partner.type is
+  upvest, User.id is also stored as banking_partner.external_id and as
+  Next Gen custodian.external_id. Partial at the banking-partner level.
+
+  No direct ingest. Ids arrive via Next Gen and Salesforce.
+
+  Not a 1:1 synonym of contracting party — the dual role is the trap.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+related_terms:
+  - contracting-party
+  - banking-partner

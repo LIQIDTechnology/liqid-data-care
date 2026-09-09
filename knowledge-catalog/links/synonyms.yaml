@@ -24,3 +24,27 @@
     kind: glossary-term
     glossary: liqid-business
     id: account
+
+- kind: entry-link
+  id: contracting-party-qplix-legal-entity
+  type: synonym
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-legal-entity
+
+- kind: entry-link
+  id: portfolio-qplix-virtual-entity
+  type: synonym
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: portfolio
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-virtual-entity
