@@ -1,0 +1,21 @@
+kind: glossary-term
+id: sleeve
+parent: structure
+display_name: Sleeve
+description: A portfolio component of exactly one investment account and one cash account, classified by sleeve type.
+labels:
+  domain: wealth
+  grain: sleeve
+overview: |
+  Sleeve types: wealth, nxt, private_market, distribution, admin_contract, income.
+  Within one portfolio, sleeve type is unique.
+
+  Standalone products are a single implied sleeve. A Smart Money portfolio
+  combines multiple sleeves (wealth and nxt). Explicit only for Smart Money
+  in Next Gen (smart_money_sub_portfolio).
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+related_terms:
+  - portfolio

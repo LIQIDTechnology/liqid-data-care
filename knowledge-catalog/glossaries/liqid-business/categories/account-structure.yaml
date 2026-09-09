@@ -1,0 +1,19 @@
+kind: glossary-category
+id: account-structure
+parent: liqid-business
+display_name: Account Structure
+description: The account tree. Contracting party → banking partner → portfolio → sleeve.
+labels:
+  domain: wealth
+overview: |
+  Same grain across tools. A portfolio hangs on a banking partner (Next Gen:
+  portfolio.custodian_id → custodian.account_id), not directly on the contracting party.
+
+      contracting_party   (subtype: single | joint | child | business)
+        └── banking_partner
+              └── portfolio
+                    └── sleeve   (explicit only for Smart Money in Next Gen)
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de

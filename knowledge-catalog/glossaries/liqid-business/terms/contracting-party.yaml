@@ -1,0 +1,34 @@
+kind: glossary-term
+id: contracting-party
+parent: structure
+display_name: Contracting Party
+description: The legal party that holds the contract. Exists whether or not that party has ever invested, which is why it is not called an investor.
+labels:
+  domain: wealth
+  grain: party
+overview: |
+  Root entity in Polarix. Banking partners, portfolios, and external reference
+  accounts hang off it.
+
+  Maps to:
+  - Account in Next Gen
+  - Account in Salesforce
+  - Legal Entity (root) in Qplix
+  - User in Upvest
+
+  Notes:
+  - Where Polarix translates Qplix wire data, a column may still read investor.
+    That is Qplix vocabulary, not ours.
+  - Fund limited partners on a capital call, and litmus fund-share importer
+    columns, are not contracting parties.
+  - Salesforce Account and Next Gen account sit at the same level but are not
+    guaranteed 1:1. See account.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - account
+related_terms:
+  - banking-partner
+  - portfolio

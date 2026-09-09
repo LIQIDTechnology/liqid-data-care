@@ -1,0 +1,31 @@
+# Aspect values on existing entries (usually @bigquery).
+# Generator applies these via dataplex entries update-aspects.
+#
+# Only tables named in glossary overviews. Dataset is omitted until signed
+# off — same rule as links/definitions.yaml. Uncomment and set dataset
+# (and project if it is not the catalog default) when the path is confirmed.
+# Project is not stored here; catalog.yaml / Terraform injects it.
+
+# - kind: entry-aspect
+#   id: dim-portfolios-source
+#   aspect_type: source-system
+#   target:
+#     kind: entry
+#     system: bigquery
+#     dataset: REPLACE_ME
+#     table: dim_portfolios
+#   data:
+#     system: salesforce
+#     object: Portfolio__c
+
+# - kind: entry-aspect
+#   id: dim-next-gen-portfolios-source
+#   aspect_type: source-system
+#   target:
+#     kind: entry
+#     system: bigquery
+#     dataset: REPLACE_ME
+#     table: dim_next_gen_portfolios
+#   data:
+#     system: nextgen
+#     object: portfolio

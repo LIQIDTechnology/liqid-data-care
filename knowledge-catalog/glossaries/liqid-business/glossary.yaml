@@ -1,0 +1,16 @@
+kind: glossary
+id: liqid-business
+display_name: LIQID Business Glossary
+description: Company vocabulary for data discovery and governance. One term, one meaning, used the same way in conversation, tickets, and code.
+labels:
+  owner: data-care
+  domain: wealth
+overview: |
+  Canonical business language for LIQID data assets.
+
+  Start with the structure tree: contracting party → banking partner → portfolio → sleeve.
+  Add a term here when it crosses a team boundary or when a name has been a repeated source of confusion.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de

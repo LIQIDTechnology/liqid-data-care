@@ -1,0 +1,5 @@
+# Repo-wide defaults. Terraform injects the real project later.
+# IDs: lowercase, hyphens, start with a letter.
+
+location: europe-west3
+project: REPLACE_ME

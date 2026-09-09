@@ -1,0 +1,6 @@
+kind: entry-group
+id: custom-sources
+display_name: Custom Sources
+description: Container for entries that Knowledge Catalog does not ingest automatically (files, third-party systems).
+labels:
+  owner: data-care

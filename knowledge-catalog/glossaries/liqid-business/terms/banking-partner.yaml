@@ -1,0 +1,32 @@
+kind: glossary-term
+id: banking-partner
+parent: structure
+display_name: Banking Partner
+description: One contracting party's account with one institution LIQID uses to hold money and securities. Type plus external_id must be read together.
+labels:
+  domain: wealth
+  grain: party-partner
+overview: |
+  Institutions today: Upvest, VBank, and the private market fund custodians
+  Hauck, HQ Capital, and Lennertz. One record per (contracting party, partner type).
+
+  Maps to:
+  - banking_partner in Polarix (type + external_id)
+  - custodian in Next Gen
+  - FinancialAccount__c in Salesforce (partial)
+  - transfer / custodian node in Qplix
+
+  Notes:
+  - Upvest User maps to contracting party and, when type is upvest, its id is
+    also banking_partner.external_id. Same vendor object, two roles.
+  - Older tickets may still say banking entity.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - custodian
+related_terms:
+  - contracting-party
+  - portfolio
+  - account

@@ -1,0 +1,50 @@
+# Canonical related-term links. Generator flattens these (and term-level
+# related_terms) into google_dataplex_entry_link of type related.
+
+- kind: entry-link
+  id: portfolio-contracting-party
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: portfolio
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party
+
+- kind: entry-link
+  id: portfolio-banking-partner
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: portfolio
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+
+- kind: entry-link
+  id: portfolio-sleeve
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: portfolio
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: sleeve
+
+- kind: entry-link
+  id: banking-partner-account
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account

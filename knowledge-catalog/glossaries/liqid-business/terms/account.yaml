@@ -1,0 +1,26 @@
+kind: glossary-term
+id: account
+parent: structure
+display_name: Account
+description: Vendor name for contracting party in Next Gen and Salesforce. Same concept; different vocabulary.
+labels:
+  domain: wealth
+  grain: party
+  vocabulary: vendor
+overview: |
+  Next Gen account and Salesforce Account are the contracting party.
+  LIQID's name for the same thing is contracting party.
+
+  Do not treat either as a banking partner. In Salesforce that is
+  FinancialAccount__c; in Next Gen that is custodian.
+
+  Salesforce Account and Next Gen account sit at the same level but are
+  not guaranteed 1:1. Bridge: account.external_salesforce_id.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - contracting-party
+related_terms:
+  - banking-partner

@@ -1,0 +1,20 @@
+kind: glossary-term
+id: custodian
+parent: structure
+display_name: Custodian
+description: Vendor and wire name for banking partner. Same concept; different vocabulary.
+labels:
+  domain: wealth
+  grain: party-partner
+  vocabulary: vendor
+overview: |
+  Used by Upvest, Qplix, Next Gen (custodian table), and the proto CustodianType.
+  LIQID's name for the same thing is banking partner.
+
+  Do not treat Next Gen custodian as the contracting party (that is account).
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - banking-partner

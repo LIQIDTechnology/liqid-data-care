@@ -1,0 +1,35 @@
+kind: aspect-type
+id: source-system
+display_name: Source System
+description: Operational system this BigQuery asset was loaded from.
+labels:
+  owner: data-care
+metadata_template:
+  name: source-system
+  type: record
+  recordFields:
+    - name: system
+      type: enum
+      index: 1
+      constraints:
+        required: true
+      annotations:
+        displayName: System
+        description: Originating operational system. One value per table.
+      enumValues:
+        - name: salesforce
+          index: 1
+        - name: nextgen
+          index: 2
+        - name: qplix
+          index: 3
+        - name: polarix
+          index: 4
+        - name: upvest
+          index: 5
+    - name: object
+      type: string
+      index: 2
+      annotations:
+        displayName: Source object
+        description: Object or table name in that system (Account, Portfolio__c).

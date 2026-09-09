@@ -1,0 +1,11 @@
+kind: entry-type
+id: certified-dataset
+display_name: Certified Dataset
+description: Custom entry that must carry a data-classification aspect before it can be saved.
+labels:
+  owner: data-care
+type_aliases:
+  - TABLE
+  - DATABASE
+required_aspects:
+  - data-classification

@@ -1,0 +1,28 @@
+kind: aspect-type
+id: data-classification
+display_name: Data Classification
+description: Sensitivity label attached to an entry or column.
+labels:
+  owner: data-care
+data_classification: DATA_CLASSIFICATION_UNSPECIFIED
+metadata_template:
+  name: data-classification
+  type: record
+  recordFields:
+    - name: level
+      type: enum
+      index: 1
+      constraints:
+        required: true
+      annotations:
+        displayName: Level
+        description: Highest sensitivity of the asset or column.
+      enumValues:
+        - name: public
+          index: 1
+        - name: internal
+          index: 2
+        - name: confidential
+          index: 3
+        - name: restricted
+          index: 4

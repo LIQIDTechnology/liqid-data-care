@@ -1,0 +1,19 @@
+# Term → physical entry or column. Type is definition.
+# Left empty on purpose so we do not invent mappings.
+#
+# Example (uncomment and fill when a mapping is signed off):
+#
+# - kind: entry-link
+#   id: contracting-party-ng-account
+#   type: definition
+#   source:
+#     kind: glossary-term
+#     glossary: liqid-business
+#     id: contracting-party
+#   target:
+#     kind: entry
+#     system: bigquery
+#     project: liqid-analytics-prod
+#     dataset: raw
+#     table: liqid_next_gen_db_account
+#     # path: id   # optional column path

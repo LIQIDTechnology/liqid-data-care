@@ -1,0 +1,26 @@
+# Canonical synonym links. Generator flattens these (and term-level synonyms)
+# into google_dataplex_entry_link of type synonym.
+
+- kind: entry-link
+  id: banking-partner-custodian
+  type: synonym
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: custodian
+
+- kind: entry-link
+  id: contracting-party-account
+  type: synonym
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account
