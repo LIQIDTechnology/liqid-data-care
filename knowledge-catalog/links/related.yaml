@@ -192,3 +192,39 @@
     kind: glossary-term
     glossary: liqid-business
     id: contracting-party
+
+- kind: entry-link
+  id: transfer-account-contracting-party
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: transfer-account
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party
+
+- kind: entry-link
+  id: transfer-account-banking-partner
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: transfer-account
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+
+- kind: entry-link
+  id: transfer-account-portfolio
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: transfer-account
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: portfolio

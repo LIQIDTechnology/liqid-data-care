@@ -9,8 +9,9 @@ overview: |
   Canonical business language for LIQID data assets.
 
   Start with the structure tree: contracting party → banking partner →
-  portfolio. Smart Money inserts a sleeve above its wealth and PE NXT
-  portfolios.
+  portfolio. Plus transfer account on the VBank banking partner (sibling
+  of portfolio, not a product). Smart Money inserts a sleeve above its
+  wealth and PE NXT portfolios.
   Add a term here when it crosses a team boundary or when a name has been a repeated source of confusion.
 contacts:
   - role: steward

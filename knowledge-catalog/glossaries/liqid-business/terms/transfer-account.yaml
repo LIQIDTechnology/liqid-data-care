@@ -1,0 +1,36 @@
+kind: glossary-term
+id: transfer-account
+parent: account-structure
+display_name: Transfer Account
+description: Cash parking rail on the VBank banking partner. Used to move money between portfolios and to receive client pay-ins before allocation. Exactly one per contracting party.
+labels:
+  domain: wealth
+  grain: transfer-account
+overview: |
+  Parks cash while money moves between portfolios. Clients can pay in here,
+  then have it moved to a specific portfolio.
+
+  Exactly one per contracting party. Required on the VBank banking partner;
+  in practice that is the same object.
+
+  Not an investable product. Do not join it as a normal portfolio in analytics.
+
+  Maps to:
+  - a security under the Legal Entity in Qplix (not a Virtual Entity /
+    portfolio node). See qplix-legal-entity and qplix-virtual-entity.
+  - Portfolio__c with type transfer account in Salesforce
+  - a property on custodian in Next Gen (not a portfolio row)
+
+  Notes:
+  - Salesforce stores this as a portfolio; that is a storage accident, not
+    the grain.
+  - Qplix Legal Entity is the contracting party; this security is not the
+    portfolio. See qplix-legal-entity.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+related_terms:
+  - contracting-party
+  - banking-partner
+  - portfolio

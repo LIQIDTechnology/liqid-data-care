@@ -26,6 +26,8 @@ overview: |
     are the same level, different keys — not one entity.
   - Qplix Legal Entity is the contracting party; the Virtual Entity is the
     portfolio. See qplix-legal-entity and qplix-virtual-entity.
+  - Salesforce Portfolio__c with type transfer account is the transfer-account
+    term, not this grain.
 contacts:
   - role: steward
     name: Data Care
@@ -36,3 +38,4 @@ related_terms:
   - contracting-party
   - banking-partner
   - sleeve
+  - transfer-account

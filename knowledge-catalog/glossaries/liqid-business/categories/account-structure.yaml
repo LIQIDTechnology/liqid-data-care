@@ -2,7 +2,7 @@ kind: glossary-category
 id: account-structure
 parent: liqid-business
 display_name: Account Structure
-description: The account tree. Contracting party → banking partner → portfolio. Smart Money inserts a sleeve above its wealth and PE NXT portfolios.
+description: The account tree. Contracting party → banking partner → portfolio. Transfer account hangs on the VBank banking partner as a sibling of portfolio. Smart Money inserts a sleeve above its wealth and PE NXT portfolios.
 labels:
   domain: wealth
 overview: |
@@ -17,6 +17,7 @@ overview: |
 
       contracting_party   (type: single | joint | child | business)
         └── banking_partner
+              ├── transfer_account      (exactly one; required on VBank)
               ├── portfolio              (standalone)
               └── sleeve                (Smart Money only, today)
                     ├── wealth portfolio
