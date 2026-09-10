@@ -2,13 +2,19 @@ kind: glossary-term
 id: portfolio
 parent: account-structure
 display_name: Portfolio
-description: An investable product instance. Hangs on a banking partner, not directly on the contracting party.
+description: An investable product instance. Hangs on a banking partner, or on a sleeve when it is part of Smart Money.
 labels:
   domain: wealth
   grain: product-instance
 overview: |
   Next Gen types include wealth, eltif, smart_money, private_market, and
-  fixed_income. Standalone products imply one sleeve; Smart Money combines several.
+  fixed_income. Standalone products hang on the banking partner and have
+  no sleeve. See sleeve.
+
+  Next Gen smart_money is the sleeve (parent only). Child wealth and PE NXT
+  portfolios are not Next Gen portfolio rows. Their Qplix ids sit on
+  smart_money_portfolio. In Salesforce and Qplix the children are real
+  portfolios / Virtual Entities under that parent.
 
   Maps to:
   - portfolio + type tables in Next Gen and Polarix

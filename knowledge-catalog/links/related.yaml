@@ -38,6 +38,30 @@
     id: sleeve
 
 - kind: entry-link
+  id: sleeve-banking-partner
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: sleeve
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+
+- kind: entry-link
+  id: sleeve-qplix-virtual-entity
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: sleeve
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-virtual-entity
+
+- kind: entry-link
   id: banking-partner-account
   type: related
   source:
@@ -120,3 +144,51 @@
     kind: glossary-term
     glossary: liqid-business
     id: account
+
+- kind: entry-link
+  id: financial-account-account
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: financial-account
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: account
+
+- kind: entry-link
+  id: qplix-group-qplix-legal-entity
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-group
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-legal-entity
+
+- kind: entry-link
+  id: qplix-group-qplix-virtual-entity
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-group
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-virtual-entity
+
+- kind: entry-link
+  id: qplix-group-contracting-party
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-group
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: contracting-party

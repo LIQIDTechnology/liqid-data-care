@@ -2,20 +2,25 @@ kind: glossary-category
 id: account-structure
 parent: liqid-business
 display_name: Account Structure
-description: The account tree. Contracting party → banking partner → portfolio → sleeve.
+description: The account tree. Contracting party → banking partner → portfolio. Smart Money inserts a sleeve above its wealth and PE NXT portfolios.
 labels:
   domain: wealth
 overview: |
-  Same grain across tools. A portfolio hangs on a banking partner (Next Gen:
-  portfolio.custodian_id → custodian.account_id), not directly on the contracting party.
+  Same grain across tools. A standalone portfolio hangs on a banking partner
+  (Next Gen: portfolio.custodian_id → custodian.account_id), not directly
+  on the contracting party.
 
   Account subtype (single | joint | child | business) is a flag on the
   contracting party, not a child node.
 
+  A sleeve is a parent of portfolios, not a child. Today only Smart Money.
+
       contracting_party   (subtype: single | joint | child | business)
         └── banking_partner
-              └── portfolio
-                    └── sleeve   (explicit only for Smart Money in Next Gen)
+              ├── portfolio              (standalone)
+              └── sleeve                (Smart Money only, today)
+                    ├── wealth portfolio
+                    └── nxt portfolio
 contacts:
   - role: steward
     name: Data Care

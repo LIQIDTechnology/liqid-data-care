@@ -1,0 +1,26 @@
+kind: glossary-term
+id: financial-account
+parent: account-structure
+display_name: Financial Account
+description: Salesforce name for banking partner. Same concept; different vocabulary. Mapping to Next Gen custodian is partial.
+labels:
+  domain: wealth
+  grain: party-partner
+  vocabulary: vendor
+overview: |
+  Salesforce FinancialAccount__c is the banking partner. LIQID's name
+  for the same thing is banking partner. Grain is one Financial Account
+  id. Partial versus Next Gen custodian — not 1:1.
+
+  Keys on the Salesforce object include Qplix Legal Entity and group,
+  VBank root, and Upvest user. Analytics: stg_sf_financial_account.
+
+  Do not treat this as Salesforce Account (that is the contracting party).
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+synonyms:
+  - banking-partner
+related_terms:
+  - account

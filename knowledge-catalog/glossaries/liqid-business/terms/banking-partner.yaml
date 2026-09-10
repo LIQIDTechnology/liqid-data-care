@@ -13,7 +13,7 @@ overview: |
   Maps to:
   - banking_partner in Polarix (type + external_id)
   - custodian in Next Gen
-  - FinancialAccount__c in Salesforce (partial)
+  - FinancialAccount__c in Salesforce (partial). See financial-account.
   - transfer / custodian node in Qplix
 
   Notes:
@@ -26,8 +26,10 @@ contacts:
     email: data-care@liqid.de
 synonyms:
   - custodian
+  - financial-account
 related_terms:
   - contracting-party
   - portfolio
   - account
   - upvest-user
+  - sleeve

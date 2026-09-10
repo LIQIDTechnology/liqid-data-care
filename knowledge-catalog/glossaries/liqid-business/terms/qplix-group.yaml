@@ -1,0 +1,27 @@
+kind: glossary-term
+id: qplix-group
+parent: account-structure
+display_name: Qplix Group
+description: Qplix container above Legal Entities and their Virtual Entities. Not the Legal Entity and not a node in the LIQID tree.
+labels:
+  domain: wealth
+  grain: group
+  vocabulary: vendor
+overview: |
+  Qplix tree: group → Legal Entity → Virtual Entities. A group can
+  hold more than one Legal Entity; each Legal Entity has Virtual
+  Entities (portfolios) under it.
+
+  The LIQID tree has no group node. Contracting party is the Legal
+  Entity, not the group. qplix_group_id is stored on Next Gen account
+  and on Salesforce Financial Account; that is a key, not the grain.
+
+  Do not treat this as the Legal Entity (that is qplix-legal-entity).
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+related_terms:
+  - qplix-legal-entity
+  - qplix-virtual-entity
+  - contracting-party

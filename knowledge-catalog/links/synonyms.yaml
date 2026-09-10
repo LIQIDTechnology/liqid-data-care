@@ -48,3 +48,15 @@
     kind: glossary-term
     glossary: liqid-business
     id: qplix-virtual-entity
+
+- kind: entry-link
+  id: banking-partner-financial-account
+  type: synonym
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: financial-account

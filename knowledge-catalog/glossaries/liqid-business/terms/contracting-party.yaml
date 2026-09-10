@@ -13,7 +13,8 @@ overview: |
 
   Maps to:
   - Account in Next Gen and Salesforce. See account.
-  - Legal Entity (root) in Qplix. See qplix-legal-entity.
+  - Legal Entity in Qplix. See qplix-legal-entity. The Qplix group above
+    that entity is not the contracting party. See qplix-group.
   - User in Upvest. See upvest-user. Same vendor object, two roles.
 
   Notes:
@@ -35,3 +36,4 @@ related_terms:
   - portfolio
   - upvest-user
   - account-subtype
+  - qplix-group

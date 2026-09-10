@@ -2,20 +2,33 @@ kind: glossary-term
 id: sleeve
 parent: account-structure
 display_name: Sleeve
-description: A portfolio component of exactly one investment account and one cash account, classified by sleeve type.
+description: Optional parent of more than one portfolio. Today only Smart Money. Standalone products have no sleeve.
 labels:
   domain: wealth
   grain: sleeve
 overview: |
-  Sleeve types: wealth, nxt, private_market, distribution, admin_contract, income.
-  Within one portfolio, sleeve type is unique.
+  Today the only sleeve is Smart Money. It is the parent of two
+  portfolios: one wealth and one PE NXT. Standalone products have no
+  parent.
 
-  Standalone products are a single implied sleeve. A Smart Money portfolio
-  combines multiple sleeves (wealth and nxt). Explicit only for Smart Money
-  in Next Gen (smart_money_sub_portfolio).
+  Salesforce: parent and children are both Portfolio__c. Standalone
+  rows have no parent.
+
+  Qplix: parent and children are Virtual Entities. There is no Smart
+  Money Legal Entity. See qplix-virtual-entity.
+
+  Next Gen: no child portfolio rows and no smart_money_sub_portfolio.
+  The parent is a row in portfolio plus a smart_money_portfolio type
+  table. That table holds the Qplix id of the wealth Virtual Entity and
+  the Qplix id of the nxt Virtual Entity.
+
+  Do not treat Next Gen smart_money as a third child portfolio. It is
+  the sleeve. The children live in Qplix and Salesforce only.
 contacts:
   - role: steward
     name: Data Care
     email: data-care@liqid.de
 related_terms:
   - portfolio
+  - banking-partner
+  - qplix-virtual-entity

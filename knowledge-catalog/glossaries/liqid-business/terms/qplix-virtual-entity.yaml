@@ -12,12 +12,17 @@ overview: |
   Key is qplix_portfolio_id (also Next Gen portfolio.qplix_id). There is
   no stg_qplix_portfolio.
 
-  Qplix's own tree is Legal Entity → Virtual Entity → custodian/transfer
-  node. The banking partner hangs under the portfolio in the structure
-  eval, unlike the LIQID tree (contracting party → banking partner →
-  portfolio).
+  Qplix's own tree is group → Legal Entity → Virtual Entity →
+  custodian/transfer node. The banking partner hangs under the portfolio
+  in the structure eval, unlike the LIQID tree (contracting party →
+  banking partner → portfolio).
 
-  Do not treat this as the root Legal Entity (that is the contracting party).
+  Do not treat this as the Legal Entity (that is the contracting party).
+  See qplix-group for the parent container.
+
+  Smart Money children (wealth and nxt) are Virtual Entities. There is
+  no Smart Money Legal Entity. Next Gen stores those VE ids on
+  smart_money_portfolio. See sleeve.
 contacts:
   - role: steward
     name: Data Care
@@ -26,3 +31,5 @@ synonyms:
   - portfolio
 related_terms:
   - qplix-legal-entity
+  - qplix-group
+  - sleeve

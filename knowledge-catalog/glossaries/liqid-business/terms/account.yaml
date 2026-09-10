@@ -12,7 +12,8 @@ overview: |
   LIQID's name for the same thing is contracting party.
 
   Do not treat either as a banking partner. In Salesforce that is
-  FinancialAccount__c; in Next Gen that is custodian.
+  Financial Account (see financial-account); in Next Gen that is
+  custodian.
 
   Salesforce Account and Next Gen account sit at the same level but are
   not guaranteed 1:1. Bridge: account.external_salesforce_id.
@@ -29,3 +30,4 @@ related_terms:
   - banking-partner
   - account-subtype
   - qplix-legal-entity
+  - financial-account
