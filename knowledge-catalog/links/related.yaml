@@ -228,3 +228,63 @@
     kind: glossary-term
     glossary: liqid-business
     id: portfolio
+
+- kind: entry-link
+  id: qplix-custodian-portfolio
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-custodian
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: portfolio
+
+- kind: entry-link
+  id: qplix-custodian-qplix-virtual-entity
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-custodian
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-virtual-entity
+
+- kind: entry-link
+  id: qplix-custodian-custodian
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-custodian
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: custodian
+
+- kind: entry-link
+  id: qplix-custodian-banking-partner
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-custodian
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: banking-partner
+
+- kind: entry-link
+  id: qplix-custodian-transfer-account
+  type: related
+  source:
+    kind: glossary-term
+    glossary: liqid-business
+    id: qplix-custodian
+  target:
+    kind: glossary-term
+    glossary: liqid-business
+    id: transfer-account

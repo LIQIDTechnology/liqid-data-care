@@ -12,10 +12,12 @@ overview: |
   Key is qplix_portfolio_id (also Next Gen portfolio.qplix_id). There is
   no stg_qplix_portfolio.
 
-  Qplix's own tree is group → Legal Entity → Virtual Entity →
-  custodian/transfer node. The banking partner hangs under the portfolio
-  in the structure eval, unlike the LIQID tree (contracting party →
-  banking partner → portfolio).
+  Qplix's own tree is group → Legal Entity → Virtual Entity → Qplix
+  custodian and bank-account node. The Qplix custodian is 1:1 with this
+  Virtual Entity and holds further portfolio attributes. See
+  qplix-custodian. The bank-account node is transfer-account. Unlike the
+  LIQID tree (contracting party → banking partner → portfolio), those
+  Qplix nodes hang under the portfolio, not above it.
 
   Do not treat this as the Legal Entity (that is the contracting party).
   See qplix-group for the parent container.
@@ -33,3 +35,4 @@ related_terms:
   - qplix-legal-entity
   - qplix-group
   - sleeve
+  - qplix-custodian

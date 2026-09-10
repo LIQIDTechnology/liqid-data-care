@@ -16,16 +16,18 @@ overview: |
   Not an investable product. Do not join it as a normal portfolio in analytics.
 
   Maps to:
-  - a security under the Legal Entity in Qplix (not a Virtual Entity /
-    portfolio node). See qplix-legal-entity and qplix-virtual-entity.
+  - the Qplix bank-account node (not the Qplix custodian node, and not
+    a Virtual Entity / portfolio node). See qplix-custodian,
+    qplix-legal-entity, and qplix-virtual-entity.
   - Portfolio__c with type transfer account in Salesforce
   - a property on custodian in Next Gen (not a portfolio row)
 
   Notes:
   - Salesforce stores this as a portfolio; that is a storage accident, not
     the grain.
-  - Qplix Legal Entity is the contracting party; this security is not the
-    portfolio. See qplix-legal-entity.
+  - Qplix Legal Entity is the contracting party; the bank-account node is
+    not the portfolio or the Qplix custodian. See qplix-legal-entity and
+    qplix-custodian.
 contacts:
   - role: steward
     name: Data Care
@@ -34,3 +36,4 @@ related_terms:
   - contracting-party
   - banking-partner
   - portfolio
+  - qplix-custodian

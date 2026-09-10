@@ -34,4 +34,4 @@ This repo is **data input only**. A later Terraform module will walk these files
 - Term/category extras (`overview`, `contacts`) become Knowledge Catalog aspects at apply time.
 - Definition links (term → BigQuery table or column) live in `links/definitions.yaml`.
 - Source-system (and other) aspect values on auto-ingested BigQuery entries live in `aspects/`. Do not recreate those tables under `entries/`.
-- Data-quality scans live in `../data-quality/`, not in this catalog tree.
+- Data scans (quality, profile, discovery) live in `../data-quality/`, not in this catalog tree. They map to `google_dataplex_datascan`.

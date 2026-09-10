@@ -14,7 +14,10 @@ overview: |
   - banking_partner in Polarix (type + external_id)
   - custodian in Next Gen
   - FinancialAccount__c in Salesforce (partial). See financial-account.
-  - transfer / custodian node in Qplix
+
+  In Qplix the partner type is inferred from the Custodian Bank property
+  on the Qplix custodian node. That node is qplix-custodian, not this
+  grain.
 
   Notes:
   - Upvest User.id is banking_partner.external_id when type is upvest.
@@ -34,3 +37,4 @@ related_terms:
   - upvest-user
   - sleeve
   - transfer-account
+  - qplix-custodian

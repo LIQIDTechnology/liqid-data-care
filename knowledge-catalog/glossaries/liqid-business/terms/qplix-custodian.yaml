@@ -1,0 +1,46 @@
+kind: glossary-term
+id: qplix-custodian
+parent: account-structure
+display_name: Qplix Custodian
+description: Qplix node linked 1:1 to a Virtual Entity. Holds further portfolio attributes. Not the banking partner and not Next Gen custodian.
+labels:
+  domain: wealth
+  grain: qplix-custodian
+  vocabulary: vendor
+overview: |
+  The Qplix custodian hangs under the Virtual Entity. Grain is one
+  custodian per portfolio. Key is qplix_custodian_id. There is no
+  stg_qplix_custodian.
+
+  Created with the Virtual Entity at customer setup. It carries
+  portfolio operating attributes: model portfolio, portfolio number,
+  broker config, Custodian Bank, cash-management marker, lifecycle
+  and action state.
+
+  The id lands on:
+  - Next Gen portfolio.bank_account_qplix_id (staged as qplix_custodian_id)
+  - Salesforce Portfolio__c.Qplix_Custodian_Id__c
+  - Polarix investment_account.external_qplix_custodian_id (unique when
+    active)
+
+  Qplix tree: group → Legal Entity → Virtual Entity → Qplix custodian
+  and bank-account node. The LIQID tree has no Qplix custodian node.
+
+  Do not treat this as the banking partner or Next Gen custodian (that
+  is custodian / banking-partner). Do not treat this as the Virtual
+  Entity (that is the portfolio). Do not treat this as the Qplix
+  bank-account node (that is transfer-account).
+
+  1:1 is with the Virtual Entity. Smart Money children (wealth and nxt)
+  each have their own Qplix custodian. The Next Gen smart_money parent
+  is a sleeve, not this grain. See sleeve.
+contacts:
+  - role: steward
+    name: Data Care
+    email: data-care@liqid.de
+related_terms:
+  - portfolio
+  - qplix-virtual-entity
+  - custodian
+  - banking-partner
+  - transfer-account
