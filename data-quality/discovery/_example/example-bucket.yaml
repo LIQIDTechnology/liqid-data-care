@@ -1,0 +1,9 @@
+# Template only. Files under discovery/_example/ are not applied.
+# Copy to discovery/<bucket-id>.yaml. Bucket id must match the Cloud Storage bucket.
+#
+# Spec: https://cloud.google.com/dataplex/docs/reference/rest/v1/DataDiscoverySpec
+# gcloud accepts camelCase. Terraform in this folder accepts camelCase or snake_case.
+
+storageConfig:
+  includePatterns: []
+  excludePatterns: []

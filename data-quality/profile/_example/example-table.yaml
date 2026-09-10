@@ -1,0 +1,9 @@
+# Template only. Files under profile/_example/ are not applied.
+# Copy to profile/<dataset>/<table>.yaml.
+#
+# Spec: https://cloud.google.com/dataplex/docs/reference/rest/v1/DataProfileSpec
+# gcloud accepts camelCase. Terraform in this folder accepts camelCase or snake_case.
+
+samplingPercent: 100.0
+rowFilter: ""
+catalogPublishingEnabled: true
