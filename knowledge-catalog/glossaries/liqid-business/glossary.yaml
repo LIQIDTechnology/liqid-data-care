@@ -1,6 +1,6 @@
 kind: glossary
-id: liqid-business
-display_name: LIQID Business Glossary
+id: liqid
+display_name: LIQID
 description: Company vocabulary for data discovery and governance. One term, one meaning, used the same way in conversation, tickets, and code.
 labels:
   owner: data-care
