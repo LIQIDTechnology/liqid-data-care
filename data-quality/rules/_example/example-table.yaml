@@ -1,0 +1,48 @@
+# Template only. Files under rules/_example/ are not applied.
+# Copy to rules/<dataset>/<table>.yaml and replace column names.
+#
+# Spec: https://cloud.google.com/dataplex/docs/reference/rest/v1/DataQualitySpec
+# gcloud accepts camelCase. Terraform in this folder accepts camelCase or snake_case.
+
+samplingPercent: 100.0
+rowFilter: ""
+rules:
+  - name: missing-id-check
+    column: id
+    dimension: COMPLETENESS
+    threshold: 1.0
+    description: Primary key is present on every row.
+    nonNullExpectation: {}
+
+  - name: unique-id-check
+    column: id
+    dimension: UNIQUENESS
+    threshold: 1.0
+    description: Primary key is unique.
+    uniquenessExpectation: {}
+
+  - name: valid-status-check
+    column: status
+    dimension: VALIDITY
+    ignoreNull: true
+    threshold: 1.0
+    description: Status is one of the allowed values.
+    setExpectation:
+      values:
+        - active
+        - inactive
+        - closed
+
+  - name: no-orphan-parent-check
+    dimension: CONSISTENCY
+    description: Fails if any row references a parent_id that is not in the table.
+    sqlAssertion:
+      sqlStatement: |-
+        SELECT True
+        FROM ${data()} AS child
+        WHERE child.parent_id IS NOT NULL
+          AND NOT EXISTS (
+            SELECT 1
+            FROM ${data()} AS parent
+            WHERE parent.id = child.parent_id
+          )
