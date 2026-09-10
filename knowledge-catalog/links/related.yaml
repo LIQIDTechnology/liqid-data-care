@@ -98,24 +98,24 @@
     id: banking-partner
 
 - kind: entry-link
-  id: account-subtype-contracting-party
+  id: account-type-contracting-party
   type: related
   source:
     kind: glossary-term
     glossary: liqid-business
-    id: account-subtype
+    id: account-type
   target:
     kind: glossary-term
     glossary: liqid-business
     id: contracting-party
 
 - kind: entry-link
-  id: account-subtype-account
+  id: account-type-account
   type: related
   source:
     kind: glossary-term
     glossary: liqid-business
-    id: account-subtype
+    id: account-type
   target:
     kind: glossary-term
     glossary: liqid-business

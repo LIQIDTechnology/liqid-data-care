@@ -9,7 +9,7 @@ labels:
 overview: |
   Root entity in Polarix. Banking partners, portfolios, and external reference
   accounts hang off it. Shape (single, joint, child, business) is
-  account-subtype, a flag not a child node.
+  account-type, a flag not a child node.
 
   Maps to:
   - Account in Next Gen and Salesforce. See account.
@@ -35,5 +35,5 @@ related_terms:
   - banking-partner
   - portfolio
   - upvest-user
-  - account-subtype
+  - account-type
   - qplix-group

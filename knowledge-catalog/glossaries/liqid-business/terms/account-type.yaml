@@ -1,8 +1,8 @@
 kind: glossary-term
-id: account-subtype
+id: account-type
 parent: account-structure
-display_name: Account Subtype
-description: How the contracting party is shaped. Also called account type. A flag, not a node in the account tree.
+display_name: Account Type
+description: How the contracting party is shaped. A flag, not a node in the account tree.
 labels:
   domain: wealth
   grain: party
@@ -10,7 +10,7 @@ overview: |
   Values: single, joint, child, business. Not a separate object in
   Qplix, Polarix, or Upvest.
 
-  Next Gen stores one subtype row per account in single_account,
+  Next Gen stores one type row per account in single_account,
   joint_account, child_account, or business_account. int_next_gen_account
   derives the four values.
 

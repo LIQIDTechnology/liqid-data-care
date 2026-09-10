@@ -10,12 +10,12 @@ overview: |
   (Next Gen: portfolio.custodian_id → custodian.account_id), not directly
   on the contracting party.
 
-  Account subtype (single | joint | child | business) is a flag on the
+  Account type (single | joint | child | business) is a flag on the
   contracting party, not a child node.
 
   A sleeve is a parent of portfolios, not a child. Today only Smart Money.
 
-      contracting_party   (subtype: single | joint | child | business)
+      contracting_party   (type: single | joint | child | business)
         └── banking_partner
               ├── portfolio              (standalone)
               └── sleeve                (Smart Money only, today)

@@ -18,7 +18,7 @@ overview: |
   Salesforce Account and Next Gen account sit at the same level but are
   not guaranteed 1:1. Bridge: account.external_salesforce_id.
 
-  Shape is account-subtype. Next Gen uses subtype tables; Salesforce
+  Shape is account-type. Next Gen uses type-specific tables; Salesforce
   Account.Type is not the same picklist.
 contacts:
   - role: steward
@@ -28,6 +28,6 @@ synonyms:
   - contracting-party
 related_terms:
   - banking-partner
-  - account-subtype
+  - account-type
   - qplix-legal-entity
   - financial-account
